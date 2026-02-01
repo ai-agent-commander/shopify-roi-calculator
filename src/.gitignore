@@ -1,0 +1,43 @@
+# This is /src/.gitignore for the Next.js source code
+# The build output goes to /docs (parent directory) which is NOT ignored
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/package-lock.json
+
+# testing
+/coverage
+/playwright-report
+/test-results
+/.playwright/
+
+# next.js build cache
+/.next/
+
+# NOTE: Build output goes to ../docs (not ignored, needed for GitHub Pages)
+
+# misc
+.DS_Store
+*.pem
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# local env files
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# vitest
+.vitest/
